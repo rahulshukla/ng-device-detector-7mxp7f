@@ -1,0 +1,4 @@
+<p>Device: {{deviceInfo.os}}</p>
+<ng-template #mobile> This is the mobile where we will work on </ng-template>
+<ng-template #desktop> This is desktop which is already built </ng-template>
+<ng-container *ngTemplateOutlet="isMobile ? mobile : desktop"></ng-container>
